@@ -215,7 +215,7 @@ body {
 //Hero#
 #hero {
   width: 100%;
-  padding: 300px 0;
+  padding: 250px 0;
 
   //hero
   .hero {
@@ -605,6 +605,195 @@ body {
       }
     }
   }
+}
+
+//Projects#
+#projects {
+  width: 100%;
+  padding: 150px 0 120px 0;
+
+  //projects
+  .projects {
+    text-align: center;
+    //&_title
+    &_title {
+      h6 {
+        font-family: $one_family;
+        font-size: 48px;
+        text-transform: capitalize;
+        color: $four_color;
+        @include weight(700);
+        line-height: normal;
+      }
+      p {
+        padding-top: 20px;
+        font-family: $two_family;
+        font-size: $xlarge_size;
+        color: $three_color;
+        line-height: 27px;
+      }
+      //Large
+      @include large {
+        h6 {
+          font-size: 45px;
+        }
+      }
+      //Notebook
+      @include notebook {
+        h6 {
+          font-size: 35px;
+        }
+        p {
+          font-size: $large_size;
+          line-height: 24px;
+        }
+      }
+      //Tablet
+      @include tablet {
+        h6 {
+          font-size: 30px;
+        }
+        p {
+          padding-top: 15px;
+          font-size: $regular_size;
+          line-height: 20px;
+        }
+      }
+      //X-Tablet
+      @include x-tablet {
+        h6 {
+          font-size: 25px;
+        }
+      }
+      //Mobil
+      @include mobil {
+        h6 {
+          font-size: 20px;
+        }
+        p {
+          font-size: $small_size;
+          line-height: 17px;
+        }
+      }
+    }
+    //&_items
+    &_items {
+      padding-top: 60px;
+      //&_box
+      &_box {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        img {
+          width: 100%;
+        }
+        h6 {
+          padding-top: 25px;
+          a {
+            font-family: $one_family;
+            text-transform: uppercase;
+            color: $five_color;
+            font-size: 20px;
+            line-height: normal;
+            @include weight(700);
+          }
+        }
+        p {
+          padding-top: 20px;
+          font-family: $two_family;
+          font-size: $large_size;
+          line-height: 22px;
+          color: $three_color;
+        }
+        .tech {
+          padding-top: 20px;
+          font-family: $one_family;
+          font-size: $regular_size;
+          line-height: normal;
+          color: $four_color;
+        }
+        .read_more {
+          margin-top: 30px;
+          display: inline-block;
+          width: 100%;
+          background-color: $five_color;
+          padding: 10px 0;
+          font-family: $one_family;
+          color: $primary_color;
+          font-size: $regular_size;
+          text-transform: uppercase;
+          @include weight(700);
+        }
+
+        //Large
+        @include large {
+          h6 {
+            a {
+              font-size: $xlarge_size;
+            }
+          }
+        }
+        //Notebook
+        @include notebook {
+          h6 {
+            padding-top: 20px;
+            a {
+              font-size: $large_size;
+            }
+          }
+          p {
+            padding-top: 15px;
+            font-size: $regular_size;
+            line-height: 20px;
+          }
+          .tech {
+            padding-top: 17px;
+          }
+          .read_more {
+            margin-top: 25px;
+          }
+        }
+        //X-Tablet
+        @include x-tablet {
+          h6 {
+            a {
+              font-size: $regular_size;
+            }
+          }
+          .tech {
+            padding-top: 15px;
+          }
+        }
+        //Mobil
+        @include mobil {
+          h6 {
+            padding-top: 17px;
+          }
+          p {
+            padding-top: 13px;
+            font-size: $small_size;
+            line-height: 17px;
+          }
+          .tech {
+            padding-top: 15px;
+            font-size: $small_size;
+          }
+          .read_more {
+            margin-top: 20px;
+            font-size: $small_size;
+            padding: 7px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Blog#
+#blog {
+  width: 100%;
+  padding: 150px 0 120px 0;
 }
 
 //Footer#

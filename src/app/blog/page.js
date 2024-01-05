@@ -7,7 +7,18 @@ function Blog() {
         <h6>blog</h6>
       </div>
       {/*page#*/}
-      <div>Blog</div>
+
+      <div id="blog">
+        <div className="container">
+          <div className="blog">
+            <div className="blog_item"></div>
+            {/*blog_item*/}
+          </div>
+          {/*blog*/}
+        </div>
+        {/*container*/}
+      </div>
+      {/*blog#*/}
     </>
   );
 }
