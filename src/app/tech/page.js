@@ -15,6 +15,11 @@ import Icon12 from "/public/icon-12.svg";
 function Tech() {
   return (
     <>
+      <div id="page">
+        <h6>tech stack</h6>
+      </div>
+      {/*page#*/}
+
       <div id="tech">
         <div className="container">
           <div className="tech">
