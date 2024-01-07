@@ -950,6 +950,7 @@ body {
         background-color: $five_color;
         padding: 10px 25px;
         color: $primary_color;
+        line-height: normal;
         @include weight(700);
         text-transform: uppercase;
         font-size: $large_size;
@@ -1004,6 +1005,78 @@ body {
           font-size: $small_size;
           padding: 10px 20px;
         }
+      }
+    }
+  }
+}
+//Blog_Details#
+#blog_details {
+  width: 100%;
+  padding: 150px 0 120px 0;
+
+  //blog_details
+  .blog_details {
+    img {
+      width: 100%;
+    }
+    h6 {
+      padding-top: 30px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: $one_family;
+      line-height: 26px;
+      @include weight(700);
+      color: $five_color;
+    }
+    p {
+      padding-top: 20px;
+      font-family: $two_family;
+      color: $three_color;
+      font-size: $large_size;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+
+    //Notebook
+    @include notebook {
+      h6 {
+        padding-top: 25px;
+        font-size: $xlarge_size;
+        line-height: 23px;
+      }
+    }
+    //Tablet
+    @include tablet {
+      h6 {
+        padding-top: 20px;
+        font-size: $large_size;
+        line-height: 21px;
+      }
+      p {
+        padding-top: 18px;
+        font-size: $regular_size;
+        line-height: 21px;
+      }
+    }
+    //X-Tablet
+    @include x-tablet {
+      h6 {
+        padding-top: 18px;
+        font-size: $regular_size;
+        line-height: 19px;
+      }
+      p {
+        padding-top: 15px;
+      }
+    }
+    //Mobil
+    @include mobil {
+      h6 {
+        padding-top: 15px;
+      }
+      p {
+        font-size: $small_size;
+        line-height: 17px;
       }
     }
   }
