@@ -689,7 +689,7 @@ body {
           width: 100%;
         }
         h6 {
-          padding-top: 25px;
+          padding-top: 15px;
           a {
             font-family: $one_family;
             text-transform: uppercase;
@@ -700,21 +700,21 @@ body {
           }
         }
         p {
-          padding-top: 20px;
+          padding-top: 10px;
           font-family: $two_family;
           font-size: $large_size;
           line-height: 22px;
           color: $three_color;
         }
         .tech {
-          padding-top: 20px;
+          padding-top: 15px;
           font-family: $one_family;
           font-size: $regular_size;
           line-height: normal;
           color: $four_color;
         }
         .read_more {
-          margin-top: 30px;
+          margin-top: 25px;
           display: inline-block;
           width: 100%;
           background-color: $five_color;
@@ -737,21 +737,13 @@ body {
         //Notebook
         @include notebook {
           h6 {
-            padding-top: 20px;
             a {
               font-size: $large_size;
             }
           }
           p {
-            padding-top: 15px;
             font-size: $regular_size;
             line-height: 20px;
-          }
-          .tech {
-            padding-top: 17px;
-          }
-          .read_more {
-            margin-top: 25px;
           }
         }
         //X-Tablet
@@ -761,22 +753,18 @@ body {
               font-size: $regular_size;
             }
           }
-          .tech {
-            padding-top: 15px;
-          }
         }
         //Mobil
         @include mobil {
           h6 {
-            padding-top: 17px;
+            padding-top: 12px;
           }
           p {
-            padding-top: 13px;
             font-size: $small_size;
             line-height: 17px;
           }
           .tech {
-            padding-top: 15px;
+            padding-top: 10px;
             font-size: $small_size;
           }
           .read_more {
@@ -789,11 +777,298 @@ body {
     }
   }
 }
+//Projects_Details#
+#projects_details {
+  width: 100%;
+  padding: 150px 0 150px 0;
+
+  //projects_details
+  .projects_details {
+    //&_image
+    &_image {
+      img {
+        width: 100%;
+      }
+    }
+    //&_text
+    &_text {
+      h6 {
+        font-family: $one_family;
+        text-transform: uppercase;
+        color: $five_color;
+        font-size: 20px;
+        line-height: normal;
+        @include weight(700);
+      }
+      p {
+        padding-top: 15px;
+        font-family: $two_family;
+        font-size: $large_size;
+        line-height: 22px;
+        color: $three_color;
+      }
+      .desc {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        &_item {
+          display: flex;
+          align-items: center;
+          color: $primary_color;
+          font-size: $xlarge_size;
+          font-family: $one_family;
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+          .icon {
+            color: $five_color;
+          }
+          span {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    //Notebook
+    @include notebook {
+      //&_text
+      &_text {
+        h6 {
+          font-size: $xlarge_size;
+        }
+        p {
+          font-size: $regular_size;
+          line-height: 21px;
+        }
+        .desc {
+          &_item {
+            font-size: $large_size;
+          }
+        }
+      }
+    }
+    //Tablet
+    @include tablet {
+      text-align: center;
+      //&_text
+      &_text {
+        margin-top: 20px;
+        h6 {
+          font-size: $large_size;
+        }
+        p {
+          padding-top: 13px;
+          line-height: 20px;
+        }
+        .desc {
+          margin-top: 25px;
+          justify-content: center;
+          text-align: center;
+          &_item {
+            font-size: $regular_size;
+            margin-right: 25px;
+            span {
+              padding-left: 7px;
+            }
+          }
+        }
+      }
+    }
+    //Mobil
+    @include mobil {
+      //&_text
+      &_text {
+        h6 {
+          font-size: $regular_size;
+        }
+        p {
+          padding-top: 11px;
+          font-size: $small_size;
+          line-height: 16px;
+        }
+        .desc {
+          margin-top: 25px;
+          display: flex;
+          flex-direction: column;
+          &_item {
+            font-size: $small_size;
+            margin-right: 0;
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            span {
+              padding-left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 //Blog#
 #blog {
   width: 100%;
   padding: 150px 0 120px 0;
+
+  //blog
+  .blog {
+    //&_item
+    &_item {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        width: 100%;
+      }
+      h6 {
+        padding-top: 20px;
+        a {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-family: $one_family;
+          line-height: normal;
+          @include weight(700);
+          color: $five_color;
+        }
+      }
+      p {
+        padding-top: 15px;
+        font-family: $two_family;
+        color: $three_color;
+        font-size: $large_size;
+        letter-spacing: 0.3px;
+        line-height: 21px;
+      }
+      .read_more {
+        margin-top: 30px;
+        display: inline-block;
+        background-color: $five_color;
+        padding: 10px 25px;
+        color: $primary_color;
+        @include weight(700);
+        text-transform: uppercase;
+        font-size: $large_size;
+      }
+
+      //Large
+      @include large {
+        h6 {
+          a {
+            font-size: $xlarge_size;
+            line-height: 24px;
+          }
+        }
+      }
+      //Notebook
+      @include notebook {
+        h6 {
+          padding-top: 15px;
+          a {
+            font-size: $large_size;
+            line-height: 22px;
+          }
+        }
+        .read_more {
+          font-size: $regular_size;
+        }
+      }
+      //Tablet
+      @include tablet {
+        h6 {
+          padding-top: 13px;
+          a {
+            font-size: $regular_size;
+            line-height: 19px;
+          }
+        }
+        p {
+          font-size: $regular_size;
+          line-height: 19px;
+        }
+        .read_more {
+          margin-top: 25px;
+        }
+      }
+      //Mobil
+      @include mobil {
+        p {
+          font-size: $small_size;
+          line-height: 15px;
+        }
+        .read_more {
+          font-size: $small_size;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+//Contact#
+#contact {
+  width: 100%;
+  padding: 150px 0 150px 0;
+
+  //contact
+  .contact {
+    //&_form
+    &_form {
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid $three_color;
+        background-color: transparent;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        font-size: $large_size;
+      }
+      .read_more {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        background-color: $five_color;
+        padding: 10px 0;
+        font-family: $one_family;
+        text-transform: uppercase;
+        color: $primary_color;
+        font-size: $large_size;
+      }
+    }
+    //Notebook
+    @include notebook {
+      //&_form
+      &_form {
+        margin-top: 30px;
+        input,
+        textarea {
+          font-size: $regular_size;
+        }
+        .read_more {
+          font-size: $regular_size;
+        }
+      }
+    }
+    //Mobil
+    @include mobil {
+      //&_form
+      &_form {
+        input,
+        textarea {
+          font-size: $small_size;
+          padding: 10px 15px;
+        }
+        .read_more {
+          font-size: $small_size;
+          padding: 8px 0;
+        }
+      }
+    }
+  }
 }
 
 //Footer#
