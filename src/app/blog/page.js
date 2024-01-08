@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Blog1 from "/public/500x500.png";
 import Link from "next/link";
+import Pages from "@/components/Pages";
 
 function Blog() {
   return (
     <>
-      <div id="page">
-        <h6>blog</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="blog">
         <div className="container">
@@ -16,7 +14,7 @@ function Blog() {
             <div className="blog_item">
               <Image src={Blog1} className="img_fluid" alt="Blog İmage" />
               <h6>
-                <Link href="/">
+                <Link href="/blog/blog-1">
                   Simple Design Tips for Crafting Better UI Cards
                 </Link>
               </h6>
@@ -24,7 +22,7 @@ function Blog() {
                 Its a situation every designer knows; we work on a feature, we
                 release it, but always we say to ourselves:
               </p>
-              <Link className="read_more" href="/">
+              <Link className="read_more" href="/blog/blog-1">
                 Read More
               </Link>
             </div>
@@ -32,7 +30,7 @@ function Blog() {
             <div className="blog_item">
               <Image src={Blog1} className="img_fluid" alt="Blog İmage" />
               <h6>
-                <Link href="/">
+                <Link href="/blog/blog-1">
                   Simple Design Tips for Crafting Better UI Cards
                 </Link>
               </h6>
@@ -40,7 +38,7 @@ function Blog() {
                 Its a situation every designer knows; we work on a feature, we
                 release it, but always we say to ourselves:
               </p>
-              <Link className="read_more" href="/">
+              <Link className="read_more" href="/blog/blog-1">
                 Read More
               </Link>
             </div>
@@ -48,7 +46,7 @@ function Blog() {
             <div className="blog_item">
               <Image src={Blog1} className="img_fluid" alt="Blog İmage" />
               <h6>
-                <Link href="/">
+                <Link href="/blog/blog-1">
                   Simple Design Tips for Crafting Better UI Cards
                 </Link>
               </h6>
@@ -56,7 +54,7 @@ function Blog() {
                 Its a situation every designer knows; we work on a feature, we
                 release it, but always we say to ourselves:
               </p>
-              <Link className="read_more" href="/">
+              <Link className="read_more" href="/blog/blog-1">
                 Read More
               </Link>
             </div>
@@ -64,7 +62,7 @@ function Blog() {
             <div className="blog_item">
               <Image src={Blog1} className="img_fluid" alt="Blog İmage" />
               <h6>
-                <Link href="/">
+                <Link href="/blog/blog-1">
                   Simple Design Tips for Crafting Better UI Cards
                 </Link>
               </h6>
@@ -72,7 +70,7 @@ function Blog() {
                 Its a situation every designer knows; we work on a feature, we
                 release it, but always we say to ourselves:
               </p>
-              <Link className="read_more" href="/">
+              <Link className="read_more" href="/blog/blog-1">
                 Read More
               </Link>
             </div>
@@ -80,7 +78,7 @@ function Blog() {
             <div className="blog_item">
               <Image src={Blog1} className="img_fluid" alt="Blog İmage" />
               <h6>
-                <Link href="/">
+                <Link href="/blog/blog-1">
                   Simple Design Tips for Crafting Better UI Cards
                 </Link>
               </h6>
@@ -88,7 +86,7 @@ function Blog() {
                 Its a situation every designer knows; we work on a feature, we
                 release it, but always we say to ourselves:
               </p>
-              <Link className="read_more" href="/">
+              <Link className="read_more" href="/blog/blog-1">
                 Read More
               </Link>
             </div>

@@ -3,14 +3,12 @@ import Project1 from "/public/300x300.png";
 import { ImLink } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import Pages from "@/components/Pages";
 
 function ProjectsDetails() {
   return (
     <>
-      <div id="page">
-        <h6>projects Details</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="projects_details">
         <div className="container">

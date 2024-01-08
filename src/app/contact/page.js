@@ -1,12 +1,10 @@
+import Pages from "@/components/Pages";
 import Link from "next/link";
 
 function Contact() {
   return (
     <>
-      <div id="page">
-        <h6>contact</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="contact">
         <div className="container">

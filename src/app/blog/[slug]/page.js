@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Blog1 from "/public/1920x600.png";
+import Pages from "@/components/Pages";
 
 function BlogDetails() {
   return (
     <>
-      <div id="page">
-        <h6>blog details</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="blog_details">
         <div className="container">

@@ -151,22 +151,6 @@ body {
               background-color: $two_color;
             }
           }
-          //dropdown
-          .dropdown {
-            width: 100%;
-            top: 30px;
-            padding: 15px 0;
-            li {
-              padding-bottom: 12px;
-              &:last-child {
-                padding-bottom: 0;
-              }
-              a {
-                font-size: 12px;
-                line-height: normal;
-              }
-            }
-          }
         }
       }
       //dropdown

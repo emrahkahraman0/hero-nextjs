@@ -11,14 +11,12 @@ import Icon9 from "/public/icon-9.svg";
 import Icon10 from "/public/icon-10.svg";
 import Icon11 from "/public/icon-11.svg";
 import Icon12 from "/public/icon-12.svg";
+import Pages from "@/components/Pages";
 
 function Tech() {
   return (
     <>
-      <div id="page">
-        <h6>tech stack</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="tech">
         <div className="container">

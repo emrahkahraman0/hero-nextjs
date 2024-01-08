@@ -1,12 +1,10 @@
+import Pages from "@/components/Pages";
 import React from "react";
 
 function About() {
   return (
     <>
-      <div id="page">
-        <h6>about</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="about">
         <div className="container">

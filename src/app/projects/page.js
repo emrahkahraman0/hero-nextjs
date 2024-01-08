@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Project1 from "/public/300x300.png";
 import Link from "next/link";
+import Pages from "@/components/Pages";
 
 function Projects() {
   return (
     <>
-      <div id="page">
-        <h6>projects</h6>
-      </div>
-      {/*page#*/}
+      <Pages />
 
       <div id="projects">
         <div className="container">
@@ -26,7 +24,9 @@ function Projects() {
                   alt="Project İmage"
                 />
                 <h6>
-                  <Link href="/">Project Tile goes here</Link>
+                  <Link href="/projects/projects-1">
+                    Project Tile goes here
+                  </Link>
                 </h6>
                 <p>
                   This is sample project description random things are here in
@@ -36,7 +36,7 @@ function Projects() {
                 <div className="tech">
                   Tech stack : HTML , JavaScript, SASS, React
                 </div>
-                <Link className="read_more" href="/">
+                <Link className="read_more" href="/projects/projects-1">
                   read more
                 </Link>
               </div>
@@ -48,7 +48,9 @@ function Projects() {
                   alt="Project İmage"
                 />
                 <h6>
-                  <Link href="/">Project Tile goes here</Link>
+                  <Link href="/projects/projects-1">
+                    Project Tile goes here
+                  </Link>
                 </h6>
                 <p>
                   This is sample project description random things are here in
@@ -58,7 +60,7 @@ function Projects() {
                 <div className="tech">
                   Tech stack : HTML , JavaScript, SASS, React
                 </div>
-                <Link className="read_more" href="/">
+                <Link className="read_more" href="/projects/projects-1">
                   read more
                 </Link>
               </div>
@@ -70,7 +72,9 @@ function Projects() {
                   alt="Project İmage"
                 />
                 <h6>
-                  <Link href="/">Project Tile goes here</Link>
+                  <Link href="/projects/projects-1">
+                    Project Tile goes here
+                  </Link>
                 </h6>
                 <p>
                   This is sample project description random things are here in
@@ -80,7 +84,7 @@ function Projects() {
                 <div className="tech">
                   Tech stack : HTML , JavaScript, SASS, React
                 </div>
-                <Link className="read_more" href="/">
+                <Link className="read_more" href="/projects/projects-1">
                   read more
                 </Link>
               </div>
@@ -92,7 +96,9 @@ function Projects() {
                   alt="Project İmage"
                 />
                 <h6>
-                  <Link href="/">Project Tile goes here</Link>
+                  <Link href="/projects/projects-1">
+                    Project Tile goes here
+                  </Link>
                 </h6>
                 <p>
                   This is sample project description random things are here in
@@ -102,7 +108,7 @@ function Projects() {
                 <div className="tech">
                   Tech stack : HTML , JavaScript, SASS, React
                 </div>
-                <Link className="read_more" href="/">
+                <Link className="read_more" href="/projects/projects-1">
                   read more
                 </Link>
               </div>
@@ -114,7 +120,9 @@ function Projects() {
                   alt="Project İmage"
                 />
                 <h6>
-                  <Link href="/">Project Tile goes here</Link>
+                  <Link href="/projects/projects-1">
+                    Project Tile goes here
+                  </Link>
                 </h6>
                 <p>
                   This is sample project description random things are here in
@@ -124,7 +132,7 @@ function Projects() {
                 <div className="tech">
                   Tech stack : HTML , JavaScript, SASS, React
                 </div>
-                <Link className="read_more" href="/">
+                <Link className="read_more" href="/projects/projects-1">
                   read more
                 </Link>
               </div>
