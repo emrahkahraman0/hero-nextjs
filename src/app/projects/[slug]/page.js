@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Project1 from "/public/300x300.png";
 import { ImLink } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import Pages from "@/components/Pages";
+import ProjectsListsDetails from "@/libs/ProjectsListsDetails";
 
-function ProjectsDetails() {
+async function ProjectsDetails({ params: { slug } }) {
+  const commentsData = await ProjectsListsDetails(slug);
   return (
     <>
       <Pages />
@@ -14,16 +15,17 @@ function ProjectsDetails() {
         <div className="container">
           <div className="projects_details align_items row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
             <div className="projects_details_image">
-              <Image src={Project1} className="img_fluid" alt="Project İmage" />
+              <Image
+                src={`https://picsum.photos/300/300?random=${slug}`}
+                width={300}
+                height={300}
+                alt="Blog İmage"
+              />
             </div>
             {/*projects_details_image#*/}
             <div className="projects_details_text">
-              <h6>Project Tile goes here</h6>
-              <p>
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content.
-              </p>
+              <h6>{commentsData.name}</h6>
+              <p>{commentsData.body}</p>
               <div className="desc">
                 <Link href="/" className="desc_item">
                   <ImLink className="icon" />
