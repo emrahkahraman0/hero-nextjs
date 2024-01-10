@@ -1084,7 +1084,7 @@ body {
         margin-bottom: 20px;
         font-size: $large_size;
       }
-      .read_more {
+      button {
         text-align: center;
         display: inline-block;
         width: 100%;
@@ -1092,8 +1092,10 @@ body {
         padding: 10px 0;
         font-family: $one_family;
         text-transform: uppercase;
+        @include weight(700);
         color: $primary_color;
         font-size: $large_size;
+        cursor: pointer;
       }
     }
     //Notebook
@@ -1105,7 +1107,7 @@ body {
         textarea {
           font-size: $regular_size;
         }
-        .read_more {
+        button {
           font-size: $regular_size;
         }
       }
@@ -1119,7 +1121,7 @@ body {
           font-size: $small_size;
           padding: 10px 15px;
         }
-        .read_more {
+        button {
           font-size: $small_size;
           padding: 8px 0;
         }

@@ -21,14 +21,7 @@ function Contact() {
                 <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Email" />
                 <textarea placeholder="Message" rows="7"></textarea>
-                <Link
-                  className="read_more"
-                  type="submit"
-                  value="sende"
-                  href="/"
-                >
-                  send
-                </Link>
+                <button typeof="submit">submit</button>
               </form>
             </div>
             {/*contact_form*/}
