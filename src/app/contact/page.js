@@ -1,5 +1,4 @@
 import Pages from "@/components/Pages";
-import Link from "next/link";
 
 function Contact() {
   return (
@@ -16,10 +15,11 @@ function Contact() {
                 height="400"
               ></iframe>
             </div>
+            {/*contact_maps*/}
             <div className="contact_form">
               <form>
                 <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Email" />
+                <input type="email" placeholder="Email" />
                 <textarea placeholder="Message" rows="7"></textarea>
                 <button typeof="submit">submit</button>
               </form>
